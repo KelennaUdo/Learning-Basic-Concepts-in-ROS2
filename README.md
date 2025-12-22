@@ -4,8 +4,11 @@ This repository captures my hands-on journey learning ROS 2, with small, focused
 
 ## Sources
 
-- ROS 2 for Beginners (ROS Jazzy – 2025) (Udemy)
-- Introduction to ROS (DigiKey YouTube playlist)
+I used the following learning resources
+
+- ROS 2 for Beginners (ROS Jazzy – 2025) [Udemy](https://www.udemy.com/course/ros2-for-beginners/?couponCode=CM251222G1)
+- Introduction to ROS [DigiKey YouTube playlist](https://www.youtube.com/playlist?list=PLEBQazB0HUySWueUF2zNyrA8LSX3rDvE7)
+- ROS 2 Jazzy docs: [tutorials](https://docs.ros.org/en/jazzy/Tutorials.html), [basic concepts](https://docs.ros.org/en/jazzy/Concepts/Basic.html)
 
 ## Workspace Layout
 
