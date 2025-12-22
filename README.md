@@ -1,10 +1,6 @@
 # Learning Basic Concepts in ROS 2
 
-Hands-on ROS 2 (Jazzy) fundamentals through structured tutorials and exercises. The workspace contains small, focused examples covering nodes, topics, services, custom interfaces, parameters, and basic system organization in both Python and C++.
-
-## Goals
-
-The goal of this repository is to demonstrate progressive my understanding of ROS 2 concepts through clean, well-organized code while serving as a personal reference and portfolio of foundational robotics software skills.
+This repository captures my hands-on journey learning ROS 2, with small, focused examples of core ROS 2 concepts implemeted to build programs. It showcases clean, well-structured code while serving as both a personal reference and a growing portfolio of foundational robotics software skills.
 
 ## Sources
 
