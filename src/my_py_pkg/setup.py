@@ -28,6 +28,8 @@ setup(
             'add_two_ints_client = my_py_pkg.services.add_two_ints_client:main',
             'add_two_ints_client_no_oop = my_py_pkg.services.add_two_ints_client_no_oop:main',
             'hardware_status_publisher = my_py_pkg.custom_interfaces.hardware_status_publisher:main',
+            'number_publisher = my_py_pkg.parameters.number_publisher:main',
+            'number_counter = my_py_pkg.parameters.number_counter:main'
         ],
     },
 )

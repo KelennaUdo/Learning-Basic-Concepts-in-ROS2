@@ -13,7 +13,7 @@ public:
         timer_ = this->create_wall_timer(
             1s,
             std::bind(&HardwareStatusPublisherNode::publishHardwareStatus, this));
-        RCLCPP_INFO(this->get_logger(), "Hardware status publisher has been started");
+        RCLCPP_INFO(this->get_logger(), "cpp Hardware status publisher has been started");
     }
 
 private:

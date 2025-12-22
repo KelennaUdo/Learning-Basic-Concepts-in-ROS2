@@ -42,11 +42,18 @@ ament_target_dependencies(add_two_ints_client_no_oop rclcpp example_interfaces)
 add_executable(add_two_ints_client src/services/add_two_ints_client.cpp)
 ament_target_dependencies(add_two_ints_client rclcpp example_interfaces)
 
-add_executable(hw_status_pub src/custom_interfaces/hardware_status_publisher)
+add_executable(hw_status_pub src/custom_interfaces/hardware_status_publisher.cpp)
 ament_target_dependencies(hw_status_pub rclcpp my_robot_interfaces)
 
+add_executable(number_counter src/parameters/number_counter.cpp)
+ament_target_dependencies(number_counter rclcpp example_interfaces)
+
+add_executable(number_publisher src/parameters/number_publisher.cpp)
+ament_target_dependencies(number_publisher rclcpp example_interfaces)
+
+
 install(
-  TARGETS cpp_node add_two_ints_server add_two_ints_client_no_oop add_two_ints_client smart_phone robot_news_station hw_status_pub
+  TARGETS cpp_node add_two_ints_server add_two_ints_client_no_oop add_two_ints_client smart_phone robot_news_station hw_status_pub number_counter number_publisher
   
   DESTINATION lib/${PROJECT_NAME}
 )
