@@ -1,9 +1,51 @@
-# Learning-Basic-Concepts-in-ROS2
-This repository documents my hands-on learning of ROS 2 (Jazzy) fundamentals through structured tutorials and exercises. It contains small, focused examples covering core ROS 2 concepts such as nodes, topics, services, custom interfaces, parameters, and basic system organization, implemented primarily in Python and C++.
-The work follows along with and extends material from:
+# Learning Basic Concepts in ROS 2
+
+Hands-on ROS 2 (Jazzy) fundamentals through structured tutorials and exercises. The workspace contains small, focused examples covering nodes, topics, services, custom interfaces, parameters, and basic system organization in both Python and C++.
+
+## Goals
+
+The goal of this repository is to demonstrate progressive my understanding of ROS 2 concepts through clean, well-organized code while serving as a personal reference and portfolio of foundational robotics software skills.
+
+## Sources
 
 - ROS 2 for Beginners (ROS Jazzy – 2025) (Udemy)
-
 - Introduction to ROS (DigiKey YouTube playlist)
 
-The goal of this repository is to demonstrate progressive understanding of ROS 2 concepts through clean, well-organized code, while serving as a personal reference and portfolio of foundational robotics software skills.
+## Workspace Layout
+
+- `src/my_cpp_pkg`: C++ examples (nodes, topics, services)
+- `src/my_py_pkg`: Python examples (nodes, topics, services)
+- `src/my_robot_interfaces`: Custom message/service/interface definitions
+
+## Concepts Covered
+
+- Nodes: single-purpose processes that perform work and communicate.
+- Topics: publish/subscribe message streams for data flow.
+- Services: request/response calls for synchronous interactions.
+- Interfaces: custom message/service definitions used across packages.
+- Parameters: runtime configuration values for nodes.
+- Launch files: a handy way to automate the running of many nodes with a single command
+
+## Prerequisites
+
+- ROS 2 Jazzy installed and sourced
+- `colcon` and `rosdep`
+
+## Build
+
+```bash
+cd ~/ros2_ws
+rosdep install --from-paths src --ignore-src -r -y
+colcon build --symlink-install
+source install/setup.bash
+```
+
+## Run Examples
+
+```bash
+# Python nodes
+ros2 run my_py_pkg <node_name>
+
+# C++ nodes
+ros2 run my_cpp_pkg <node_name>
+```
